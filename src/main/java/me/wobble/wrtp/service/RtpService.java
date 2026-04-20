@@ -1,19 +1,19 @@
-package me.wobble.wobblertp.service;
+package me.wobble.wrtp.service;
 
 import java.util.Optional;
 import java.util.UUID;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
-import me.wobble.wobblertp.WobbleRTP;
-import me.wobble.wobblertp.manager.ConfigurationManager;
-import me.wobble.wobblertp.manager.CooldownManager;
-import me.wobble.wobblertp.manager.CountdownManager;
-import me.wobble.wobblertp.model.PendingTeleport;
-import me.wobble.wobblertp.model.PluginSettings;
-import me.wobble.wobblertp.model.RtpWorldType;
-import me.wobble.wobblertp.util.ChatUtil;
-import me.wobble.wobblertp.util.SoundUtil;
+import me.wobble.wrtp.WRTP;
+import me.wobble.wrtp.manager.ConfigurationManager;
+import me.wobble.wrtp.manager.CooldownManager;
+import me.wobble.wrtp.manager.CountdownManager;
+import me.wobble.wrtp.model.PendingTeleport;
+import me.wobble.wrtp.model.PluginSettings;
+import me.wobble.wrtp.model.RtpWorldType;
+import me.wobble.wrtp.util.ChatUtil;
+import me.wobble.wrtp.util.SoundUtil;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.World;
@@ -22,14 +22,14 @@ import org.bukkit.event.player.PlayerTeleportEvent;
 
 public final class RtpService {
 
-    private final WobbleRTP plugin;
+    private final WRTP plugin;
     private final ConfigurationManager configurationManager;
     private final CooldownManager cooldownManager;
     private final CountdownManager countdownManager;
     private final SafeLocationFinder safeLocationFinder;
     private final ConcurrentMap<UUID, UUID> activeSearches = new ConcurrentHashMap<>();
 
-    public RtpService(WobbleRTP plugin, ConfigurationManager configurationManager, CooldownManager cooldownManager,
+    public RtpService(WRTP plugin, ConfigurationManager configurationManager, CooldownManager cooldownManager,
                       CountdownManager countdownManager, SafeLocationFinder safeLocationFinder) {
         this.plugin = plugin;
         this.configurationManager = configurationManager;

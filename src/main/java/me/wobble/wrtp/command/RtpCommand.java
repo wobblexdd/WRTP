@@ -1,10 +1,10 @@
-package me.wobble.wobblertp.command;
+package me.wobble.wrtp.command;
 
 import java.util.Collections;
 import java.util.List;
-import me.wobble.wobblertp.gui.RtpGui;
-import me.wobble.wobblertp.manager.ConfigurationManager;
-import me.wobble.wobblertp.util.ChatUtil;
+import me.wobble.wrtp.gui.RtpGui;
+import me.wobble.wrtp.manager.ConfigurationManager;
+import me.wobble.wrtp.util.ChatUtil;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;

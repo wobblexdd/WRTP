@@ -1,14 +1,14 @@
-package me.wobble.wobblertp.manager;
+package me.wobble.wrtp.manager;
 
 import java.util.Map;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Consumer;
-import me.wobble.wobblertp.WobbleRTP;
-import me.wobble.wobblertp.model.PendingTeleport;
-import me.wobble.wobblertp.model.RtpWorldType;
-import me.wobble.wobblertp.util.ChatUtil;
-import me.wobble.wobblertp.util.SoundUtil;
+import me.wobble.wrtp.WRTP;
+import me.wobble.wrtp.model.PendingTeleport;
+import me.wobble.wrtp.model.RtpWorldType;
+import me.wobble.wrtp.util.ChatUtil;
+import me.wobble.wrtp.util.SoundUtil;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
@@ -16,11 +16,11 @@ import org.bukkit.scheduler.BukkitTask;
 
 public final class CountdownManager {
 
-    private final WobbleRTP plugin;
+    private final WRTP plugin;
     private final ConfigurationManager configurationManager;
     private final Map<UUID, PendingTeleport> pendingTeleports = new ConcurrentHashMap<>();
 
-    public CountdownManager(WobbleRTP plugin, ConfigurationManager configurationManager) {
+    public CountdownManager(WRTP plugin, ConfigurationManager configurationManager) {
         this.plugin = plugin;
         this.configurationManager = configurationManager;
     }

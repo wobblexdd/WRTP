@@ -1,24 +1,24 @@
-package me.wobble.wobblertp;
+package me.wobble.wrtp;
 
 import java.util.Objects;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadFactory;
-import me.wobble.wobblertp.command.RtpCommand;
-import me.wobble.wobblertp.gui.RtpGui;
-import me.wobble.wobblertp.listener.GuiListener;
-import me.wobble.wobblertp.listener.PlayerKickListener;
-import me.wobble.wobblertp.listener.PlayerMoveListener;
-import me.wobble.wobblertp.listener.PlayerQuitListener;
-import me.wobble.wobblertp.manager.ConfigurationManager;
-import me.wobble.wobblertp.manager.CooldownManager;
-import me.wobble.wobblertp.manager.CountdownManager;
-import me.wobble.wobblertp.service.RtpService;
-import me.wobble.wobblertp.service.SafeLocationFinder;
+import me.wobble.wrtp.command.RtpCommand;
+import me.wobble.wrtp.gui.RtpGui;
+import me.wobble.wrtp.listener.GuiListener;
+import me.wobble.wrtp.listener.PlayerKickListener;
+import me.wobble.wrtp.listener.PlayerMoveListener;
+import me.wobble.wrtp.listener.PlayerQuitListener;
+import me.wobble.wrtp.manager.ConfigurationManager;
+import me.wobble.wrtp.manager.CooldownManager;
+import me.wobble.wrtp.manager.CountdownManager;
+import me.wobble.wrtp.service.RtpService;
+import me.wobble.wrtp.service.SafeLocationFinder;
 import org.bukkit.command.PluginCommand;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class WobbleRTP extends JavaPlugin {
+public final class WRTP extends JavaPlugin {
 
     private ExecutorService searchExecutor;
     private ConfigurationManager configurationManager;

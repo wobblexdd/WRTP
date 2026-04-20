@@ -1,6 +1,6 @@
-package me.wobble.wobblertp.listener;
+package me.wobble.wrtp.listener;
 
-import me.wobble.wobblertp.gui.RtpGui;
+import me.wobble.wrtp.gui.RtpGui;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

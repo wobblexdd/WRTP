@@ -1,4 +1,4 @@
-package me.wobble.wobblertp.model;
+package me.wobble.wrtp.model;
 
 public enum RtpWorldType {
     OVERWORLD("Overworld"),

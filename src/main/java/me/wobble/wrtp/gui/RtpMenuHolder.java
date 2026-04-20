@@ -1,4 +1,4 @@
-package me.wobble.wobblertp.gui;
+package me.wobble.wrtp.gui;
 
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.InventoryHolder;

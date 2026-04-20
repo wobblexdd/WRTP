@@ -1,6 +1,6 @@
-package me.wobble.wobblertp.util;
+package me.wobble.wrtp.util;
 
-import me.wobble.wobblertp.model.ConfiguredSound;
+import me.wobble.wrtp.model.ConfiguredSound;
 import org.bukkit.entity.Player;
 
 public final class SoundUtil {

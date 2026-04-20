@@ -1,4 +1,4 @@
-package me.wobble.wobblertp.manager;
+package me.wobble.wrtp.manager;
 
 import java.util.Map;
 import java.util.UUID;

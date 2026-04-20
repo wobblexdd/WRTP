@@ -1,8 +1,8 @@
-package me.wobble.wobblertp.util;
+package me.wobble.wrtp.util;
 
 import java.util.ArrayList;
 import java.util.List;
-import me.wobble.wobblertp.manager.ConfigurationManager;
+import me.wobble.wrtp.manager.ConfigurationManager;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.minimessage.MiniMessage;
 import net.kyori.adventure.text.minimessage.tag.resolver.Placeholder;

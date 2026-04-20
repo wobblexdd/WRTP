@@ -1,4 +1,4 @@
-package me.wobble.wobblertp.model;
+package me.wobble.wrtp.model;
 
 import org.bukkit.Sound;
 

@@ -1,7 +1,7 @@
-package me.wobble.wobblertp.listener;
+package me.wobble.wrtp.listener;
 
-import me.wobble.wobblertp.manager.CountdownManager;
-import me.wobble.wobblertp.service.RtpService;
+import me.wobble.wrtp.manager.CountdownManager;
+import me.wobble.wrtp.service.RtpService;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerQuitEvent;

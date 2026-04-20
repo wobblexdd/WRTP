@@ -1,6 +1,6 @@
 name: WRTP
 version: 1.0.0
-main: me.wobble.wobblertp.WobbleRTP
+main: me.wobble.wrtp.WRTP
 api-version: '1.21'
 authors: [Wobble]
 description: Modern, safe, async-friendly random teleport plugin for Paper.
@@ -15,7 +15,7 @@ permissions:
     description: Use random teleport
     default: true
   wobble.rtp.admin:
-    description: Reload WobbleRTP
+    description: Reload WRTP
     default: op
   wobble.rtp.bypass.cooldown:
     description: Bypass RTP cooldowns

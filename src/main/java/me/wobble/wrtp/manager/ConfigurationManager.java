@@ -1,4 +1,4 @@
-package me.wobble.wobblertp.manager;
+package me.wobble.wrtp.manager;
 
 import java.io.File;
 import java.util.EnumMap;
@@ -7,10 +7,10 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import me.wobble.wobblertp.WobbleRTP;
-import me.wobble.wobblertp.model.ConfiguredSound;
-import me.wobble.wobblertp.model.PluginSettings;
-import me.wobble.wobblertp.model.RtpWorldType;
+import me.wobble.wrtp.WRTP;
+import me.wobble.wrtp.model.ConfiguredSound;
+import me.wobble.wrtp.model.PluginSettings;
+import me.wobble.wrtp.model.RtpWorldType;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.Registry;
@@ -21,11 +21,11 @@ import org.bukkit.configuration.file.YamlConfiguration;
 
 public final class ConfigurationManager {
 
-    private final WobbleRTP plugin;
+    private final WRTP plugin;
     private FileConfiguration messagesConfiguration;
     private PluginSettings settings;
 
-    public ConfigurationManager(WobbleRTP plugin) {
+    public ConfigurationManager(WRTP plugin) {
         this.plugin = plugin;
         plugin.saveDefaultConfig();
         saveMessagesFile();

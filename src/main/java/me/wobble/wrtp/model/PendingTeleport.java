@@ -1,4 +1,4 @@
-package me.wobble.wobblertp.model;
+package me.wobble.wrtp.model;
 
 import java.util.UUID;
 import org.bukkit.Location;
