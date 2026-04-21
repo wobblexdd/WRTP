@@ -3,12 +3,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>me.wobble</groupId>
-    <artifactId>WRTP</artifactId>
+    <groupId>me.klouse</groupId>
+    <artifactId>KRTP</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>WRTP</name>
+    <name>KRTP</name>
     <description>Production-ready random teleport plugin for Paper 1.21.4</description>
 
     <properties>
@@ -33,7 +33,7 @@
     </dependencies>
 
     <build>
-        <finalName>WRTP-1.0.0</finalName>
+        <finalName>KRTP-1.0.0</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

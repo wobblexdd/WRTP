@@ -1,6 +1,6 @@
-package me.wobble.wrtp.listener;
+package me.klouse.krtp.listener;
 
-import me.wobble.wrtp.gui.RtpGui;
+import me.klouse.krtp.gui.RtpGui;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

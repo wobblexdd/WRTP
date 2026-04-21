@@ -1,19 +1,19 @@
-package me.wobble.wrtp.service;
+package me.klouse.krtp.service;
 
 import java.util.Optional;
 import java.util.UUID;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
-import me.wobble.wrtp.WRTP;
-import me.wobble.wrtp.manager.ConfigurationManager;
-import me.wobble.wrtp.manager.CooldownManager;
-import me.wobble.wrtp.manager.CountdownManager;
-import me.wobble.wrtp.model.PendingTeleport;
-import me.wobble.wrtp.model.PluginSettings;
-import me.wobble.wrtp.model.RtpWorldType;
-import me.wobble.wrtp.util.ChatUtil;
-import me.wobble.wrtp.util.SoundUtil;
+import me.klouse.krtp.KRTP;
+import me.klouse.krtp.manager.ConfigurationManager;
+import me.klouse.krtp.manager.CooldownManager;
+import me.klouse.krtp.manager.CountdownManager;
+import me.klouse.krtp.model.PendingTeleport;
+import me.klouse.krtp.model.PluginSettings;
+import me.klouse.krtp.model.RtpWorldType;
+import me.klouse.krtp.util.ChatUtil;
+import me.klouse.krtp.util.SoundUtil;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.World;
@@ -22,14 +22,14 @@ import org.bukkit.event.player.PlayerTeleportEvent;
 
 public final class RtpService {
 
-    private final WRTP plugin;
+    private final KRTP plugin;
     private final ConfigurationManager configurationManager;
     private final CooldownManager cooldownManager;
     private final CountdownManager countdownManager;
     private final SafeLocationFinder safeLocationFinder;
     private final ConcurrentMap<UUID, UUID> activeSearches = new ConcurrentHashMap<>();
 
-    public RtpService(WRTP plugin, ConfigurationManager configurationManager, CooldownManager cooldownManager,
+    public RtpService(KRTP plugin, ConfigurationManager configurationManager, CooldownManager cooldownManager,
                       CountdownManager countdownManager, SafeLocationFinder safeLocationFinder) {
         this.plugin = plugin;
         this.configurationManager = configurationManager;
@@ -39,7 +39,7 @@ public final class RtpService {
     }
 
     public void beginTeleport(Player player, RtpWorldType worldType) {
-        if (!player.hasPermission("wobble.rtp.use")) {
+        if (!player.hasPermission("klouse.rtp.use")) {
             player.sendMessage(ChatUtil.prefixed(configurationManager, "no-permission"));
             return;
         }
@@ -52,7 +52,7 @@ public final class RtpService {
             return;
         }
 
-        if (!player.hasPermission("wobble.rtp.bypass.cooldown")) {
+        if (!player.hasPermission("klouse.rtp.bypass.cooldown")) {
             long remaining = cooldownManager.getRemainingSeconds(playerId);
             if (remaining > 0L) {
                 player.sendMessage(ChatUtil.prefixed(configurationManager, "cooldown",
@@ -144,7 +144,7 @@ public final class RtpService {
             return;
         }
 
-        if (!player.hasPermission("wobble.rtp.bypass.cooldown")) {
+        if (!player.hasPermission("klouse.rtp.bypass.cooldown")) {
             cooldownManager.startCooldown(playerId, configurationManager.getSettings().cooldownSeconds());
         }
 

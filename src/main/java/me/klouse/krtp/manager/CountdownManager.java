@@ -1,14 +1,14 @@
-package me.wobble.wrtp.manager;
+package me.klouse.krtp.manager;
 
 import java.util.Map;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Consumer;
-import me.wobble.wrtp.WRTP;
-import me.wobble.wrtp.model.PendingTeleport;
-import me.wobble.wrtp.model.RtpWorldType;
-import me.wobble.wrtp.util.ChatUtil;
-import me.wobble.wrtp.util.SoundUtil;
+import me.klouse.krtp.KRTP;
+import me.klouse.krtp.model.PendingTeleport;
+import me.klouse.krtp.model.RtpWorldType;
+import me.klouse.krtp.util.ChatUtil;
+import me.klouse.krtp.util.SoundUtil;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
@@ -16,11 +16,11 @@ import org.bukkit.scheduler.BukkitTask;
 
 public final class CountdownManager {
 
-    private final WRTP plugin;
+    private final KRTP plugin;
     private final ConfigurationManager configurationManager;
     private final Map<UUID, PendingTeleport> pendingTeleports = new ConcurrentHashMap<>();
 
-    public CountdownManager(WRTP plugin, ConfigurationManager configurationManager) {
+    public CountdownManager(KRTP plugin, ConfigurationManager configurationManager) {
         this.plugin = plugin;
         this.configurationManager = configurationManager;
     }
@@ -59,7 +59,7 @@ public final class CountdownManager {
         if (!configurationManager.getSettings().cancelOnMove()) {
             return;
         }
-        if (player.hasPermission("wobble.rtp.bypass.move")) {
+        if (player.hasPermission("klouse.rtp.bypass.move")) {
             return;
         }
         if (!hasPending(player.getUniqueId())) {

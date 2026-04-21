@@ -1,11 +1,11 @@
-package me.wobble.wrtp.gui;
+package me.klouse.krtp.gui;
 
 import java.util.List;
-import me.wobble.wrtp.manager.ConfigurationManager;
-import me.wobble.wrtp.model.RtpWorldType;
-import me.wobble.wrtp.service.RtpService;
-import me.wobble.wrtp.util.ChatUtil;
-import me.wobble.wrtp.util.SoundUtil;
+import me.klouse.krtp.manager.ConfigurationManager;
+import me.klouse.krtp.model.RtpWorldType;
+import me.klouse.krtp.service.RtpService;
+import me.klouse.krtp.util.ChatUtil;
+import me.klouse.krtp.util.SoundUtil;
 import net.kyori.adventure.text.Component;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;

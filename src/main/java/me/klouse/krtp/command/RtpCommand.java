@@ -1,10 +1,10 @@
-package me.wobble.wrtp.command;
+package me.klouse.krtp.command;
 
 import java.util.Collections;
 import java.util.List;
-import me.wobble.wrtp.gui.RtpGui;
-import me.wobble.wrtp.manager.ConfigurationManager;
-import me.wobble.wrtp.util.ChatUtil;
+import me.klouse.krtp.gui.RtpGui;
+import me.klouse.krtp.manager.ConfigurationManager;
+import me.klouse.krtp.util.ChatUtil;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -24,7 +24,7 @@ public final class RtpCommand implements CommandExecutor, TabCompleter {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (args.length > 0 && args[0].equalsIgnoreCase("reload")) {
-            if (sender instanceof Player player && !player.hasPermission("wobble.rtp.admin")) {
+            if (sender instanceof Player player && !player.hasPermission("klouse.rtp.admin")) {
                 player.sendMessage(ChatUtil.prefixed(configurationManager, "no-permission"));
                 return true;
             }
@@ -39,7 +39,7 @@ public final class RtpCommand implements CommandExecutor, TabCompleter {
             return true;
         }
 
-        if (!player.hasPermission("wobble.rtp.use")) {
+        if (!player.hasPermission("klouse.rtp.use")) {
             player.sendMessage(ChatUtil.prefixed(configurationManager, "no-permission"));
             return true;
         }
@@ -55,7 +55,7 @@ public final class RtpCommand implements CommandExecutor, TabCompleter {
 
     @Override
     public List<String> onTabComplete(CommandSender sender, Command command, String alias, String[] args) {
-        if (args.length == 1 && sender.hasPermission("wobble.rtp.admin")
+        if (args.length == 1 && sender.hasPermission("klouse.rtp.admin")
                 && "reload".startsWith(args[0].toLowerCase())) {
             return List.of("reload");
         }

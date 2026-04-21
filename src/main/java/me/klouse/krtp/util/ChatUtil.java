@@ -1,8 +1,8 @@
-package me.wobble.wrtp.util;
+package me.klouse.krtp.util;
 
 import java.util.ArrayList;
 import java.util.List;
-import me.wobble.wrtp.manager.ConfigurationManager;
+import me.klouse.krtp.manager.ConfigurationManager;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.minimessage.MiniMessage;
 import net.kyori.adventure.text.minimessage.tag.resolver.Placeholder;

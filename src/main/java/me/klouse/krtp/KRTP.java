@@ -1,24 +1,24 @@
-package me.wobble.wrtp;
+package me.klouse.krtp;
 
 import java.util.Objects;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadFactory;
-import me.wobble.wrtp.command.RtpCommand;
-import me.wobble.wrtp.gui.RtpGui;
-import me.wobble.wrtp.listener.GuiListener;
-import me.wobble.wrtp.listener.PlayerKickListener;
-import me.wobble.wrtp.listener.PlayerMoveListener;
-import me.wobble.wrtp.listener.PlayerQuitListener;
-import me.wobble.wrtp.manager.ConfigurationManager;
-import me.wobble.wrtp.manager.CooldownManager;
-import me.wobble.wrtp.manager.CountdownManager;
-import me.wobble.wrtp.service.RtpService;
-import me.wobble.wrtp.service.SafeLocationFinder;
+import me.klouse.krtp.command.RtpCommand;
+import me.klouse.krtp.gui.RtpGui;
+import me.klouse.krtp.listener.GuiListener;
+import me.klouse.krtp.listener.PlayerKickListener;
+import me.klouse.krtp.listener.PlayerMoveListener;
+import me.klouse.krtp.listener.PlayerQuitListener;
+import me.klouse.krtp.manager.ConfigurationManager;
+import me.klouse.krtp.manager.CooldownManager;
+import me.klouse.krtp.manager.CountdownManager;
+import me.klouse.krtp.service.RtpService;
+import me.klouse.krtp.service.SafeLocationFinder;
 import org.bukkit.command.PluginCommand;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class WRTP extends JavaPlugin {
+public final class KRTP extends JavaPlugin {
 
     private ExecutorService searchExecutor;
     private ConfigurationManager configurationManager;
@@ -72,7 +72,7 @@ public final class WRTP extends JavaPlugin {
 
         @Override
         public Thread newThread(Runnable runnable) {
-            Thread thread = new Thread(runnable, "WRTP-Search-" + counter++);
+            Thread thread = new Thread(runnable, "KRTP-Search-" + counter++);
             thread.setDaemon(true);
             return thread;
         }

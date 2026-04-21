@@ -1,4 +1,4 @@
-package me.wobble.wrtp.service;
+package me.klouse.krtp.service;
 
 import java.util.Optional;
 import java.util.Set;
@@ -7,10 +7,10 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.function.Supplier;
-import me.wobble.wrtp.WRTP;
-import me.wobble.wrtp.manager.ConfigurationManager;
-import me.wobble.wrtp.model.PluginSettings;
-import me.wobble.wrtp.model.RtpWorldType;
+import me.klouse.krtp.KRTP;
+import me.klouse.krtp.manager.ConfigurationManager;
+import me.klouse.krtp.model.PluginSettings;
+import me.klouse.krtp.model.RtpWorldType;
 import org.bukkit.Bukkit;
 import org.bukkit.HeightMap;
 import org.bukkit.Location;
@@ -22,11 +22,11 @@ import org.bukkit.block.BlockFace;
 
 public final class SafeLocationFinder {
 
-    private final WRTP plugin;
+    private final KRTP plugin;
     private final ConfigurationManager configurationManager;
     private final Executor searchExecutor;
 
-    public SafeLocationFinder(WRTP plugin, ConfigurationManager configurationManager, Executor searchExecutor) {
+    public SafeLocationFinder(KRTP plugin, ConfigurationManager configurationManager, Executor searchExecutor) {
         this.plugin = plugin;
         this.configurationManager = configurationManager;
         this.searchExecutor = searchExecutor;

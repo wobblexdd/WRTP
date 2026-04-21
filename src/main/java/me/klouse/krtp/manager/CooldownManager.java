@@ -1,4 +1,4 @@
-package me.wobble.wrtp.manager;
+package me.klouse.krtp.manager;
 
 import java.util.Map;
 import java.util.UUID;

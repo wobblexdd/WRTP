@@ -1,4 +1,4 @@
-package me.wobble.wrtp.model;
+package me.klouse.krtp.model;
 
 import org.bukkit.Sound;
 

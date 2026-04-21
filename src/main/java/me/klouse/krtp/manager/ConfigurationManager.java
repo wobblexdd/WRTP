@@ -1,4 +1,4 @@
-package me.wobble.wrtp.manager;
+package me.klouse.krtp.manager;
 
 import java.io.File;
 import java.util.EnumMap;
@@ -7,10 +7,10 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import me.wobble.wrtp.WRTP;
-import me.wobble.wrtp.model.ConfiguredSound;
-import me.wobble.wrtp.model.PluginSettings;
-import me.wobble.wrtp.model.RtpWorldType;
+import me.klouse.krtp.KRTP;
+import me.klouse.krtp.model.ConfiguredSound;
+import me.klouse.krtp.model.PluginSettings;
+import me.klouse.krtp.model.RtpWorldType;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.Registry;
@@ -21,11 +21,11 @@ import org.bukkit.configuration.file.YamlConfiguration;
 
 public final class ConfigurationManager {
 
-    private final WRTP plugin;
+    private final KRTP plugin;
     private FileConfiguration messagesConfiguration;
     private PluginSettings settings;
 
-    public ConfigurationManager(WRTP plugin) {
+    public ConfigurationManager(KRTP plugin) {
         this.plugin = plugin;
         plugin.saveDefaultConfig();
         saveMessagesFile();

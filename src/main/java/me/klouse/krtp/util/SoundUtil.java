@@ -1,6 +1,6 @@
-package me.wobble.wrtp.util;
+package me.klouse.krtp.util;
 
-import me.wobble.wrtp.model.ConfiguredSound;
+import me.klouse.krtp.model.ConfiguredSound;
 import org.bukkit.entity.Player;
 
 public final class SoundUtil {

@@ -1,6 +1,6 @@
-# WRTP
+# KRTP
 
-WRTP is a modern, high-performance random teleport plugin with a GUI-based interface and asynchronous location search. It is designed for SMP and large-scale servers where performance, safety, and user experience are critical.
+KRTP is a modern, high-performance random teleport plugin with a GUI-based interface and asynchronous location search. It is designed for SMP and large-scale servers where performance, safety, and user experience are critical.
 
 ## Features
 
@@ -11,7 +11,7 @@ WRTP is a modern, high-performance random teleport plugin with a GUI-based inter
 - Countdown system with cancel-on-move
 - Cooldown system with bypass permissions
 - Fully configurable (radius, worlds, messages, sounds)
-- Integration-ready with Wobble ecosystem
+- Integration-ready with Klouse ecosystem
 
 ## GUI
 
@@ -24,7 +24,7 @@ Each option includes lore, feedback, and visual clarity.
 
 ## Performance
 
-WRTP uses a hybrid teleport algorithm:
+KRTP uses a hybrid teleport algorithm:
 
 1. Fast Path  
    Attempts to find a safe location in already loaded chunks (instant, zero lag)
@@ -52,10 +52,10 @@ The plugin guarantees:
 
 ## Permissions
 
-wobble.rtp.use — Use /rtp  
-wobble.rtp.admin — Reload config  
-wobble.rtp.bypass.cooldown — Ignore cooldown  
-wobble.rtp.bypass.move — Ignore movement cancel  
+klouse.rtp.use — Use /rtp  
+klouse.rtp.admin — Reload config  
+klouse.rtp.bypass.cooldown — Ignore cooldown  
+klouse.rtp.bypass.move — Ignore movement cancel  
 
 ## Configuration
 
